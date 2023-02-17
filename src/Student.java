@@ -2,6 +2,8 @@
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 
 public class Student {
     private final String name;
@@ -25,23 +27,13 @@ public class Student {
         return sum;
     }
     public int getmaximumMark() {
-        int maximum = 0;//95,98,10// int maximum = Integer.MIN_VALUE;
-        for (int mark : marks) {
-            if (mark > maximum) {
-                maximum = mark;
-            }
-        }
-        return maximum;
+
+        return Collections.max(marks);
     }
 
     public int getminimumMark() {
-        int minimum = 0;//int minimum = Integer.MAX_VALUE;
-        for (int mark : marks) {
-            if (mark < minimum) {
-                minimum = mark;
-            }
-        }
-        return minimum;
+
+        return Collections.min(marks);
     }
 
     public BigDecimal getAverageMarks() {
