@@ -17,5 +17,6 @@ public class StudentRunner {
         System.out.println("minimum mark: " + minimumMark);
         BigDecimal average = student.getAverageMarks();
         System.out.println("average mark: " + average);
+        System.out.println(student);
     }
 }

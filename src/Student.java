@@ -42,5 +42,8 @@ public class Student {
         return new BigDecimal(sum).divide(new BigDecimal(number), 3, RoundingMode.UP);
 
     }
+    public String toString(){
+        return name +marks;
+    }
 }
 
