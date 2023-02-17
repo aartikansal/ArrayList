@@ -20,5 +20,7 @@ public class StudentRunner {
         System.out.println(student);
         student.addNewMark(35);
         System.out.println(student);
+        student.removeMarkAtIndex(1);
+        System.out.println(student);
     }
 }

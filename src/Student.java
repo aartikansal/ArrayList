@@ -49,5 +49,9 @@ public class Student {
     public void addNewMark(int mark) {
         marks.add(mark);
     }
+
+    public void removeMarkAtIndex(int mark) {
+        marks.remove(mark);
+    }
 }
 
